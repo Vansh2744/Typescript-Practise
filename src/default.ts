@@ -13,16 +13,17 @@
 
 //--------------Readonly------------------
 
-type User = {
-  readonly id: string;
-  name: string;
-  email: string;
-};
+// type User = {
+//   readonly id: string;
+//   name: string;
+//   email: string;
+// };
 
-const user: User = {
-  id: "84uruhr84u8y8r884",
-  name: "Vansh",
-  email: "vansh@gmail.com",
-};
+// const user: User = {
+//   id: "84uruhr84u8y8r884",
+//   name: "Vansh",
+//   email: "vansh@gmail.com",
+// };
 
-user.id = "iur9tu4895u845"; // Gives error bcz id is read only
+// user.id = "iur9tu4895u845"; // Gives error bcz id is read only
+
