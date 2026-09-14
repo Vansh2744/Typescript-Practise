@@ -1,7 +1,11 @@
 "use strict";
+// function displayInfo(): object {
+//   return { name: "Vansh", email: "vansh@gmail.com" };
+// }
 Object.defineProperty(exports, "__esModule", { value: true });
-function displayInfo() {
-    return { name: "Vansh", email: "vansh@gmail.com" };
+// console.log(displayInfo());
+function display(name) {
+    console.log(`Hello ${name}`);
 }
-console.log(displayInfo());
+display("Vansh");
 //# sourceMappingURL=index.js.map
