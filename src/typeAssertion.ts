@@ -35,3 +35,9 @@
 // const newName: string = name as string;
 
 // console.log(newName);
+
+//-----------------never type----------------
+
+function neverReturn(): never {
+  while (true) {}
+}
