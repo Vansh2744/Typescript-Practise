@@ -48,18 +48,37 @@
 
 //---------------------------
 
-type Video = {
-  title: string;
-  description: string;
-  likes: number;
-};
+// type Video = {
+//   title: string;
+//   description: string;
+//   likes: number;
+// };
 
-type History = {
-  videos: Video[];
-};
+// type History = {
+//   videos: Video[];
+// };
+
+// type User = {
+//   name: string;
+//   uploadedVideos: Video[];
+//   history: History;
+// };
+
+//-----------------------------
 
 type User = {
   name: string;
-  uploadedVideos: Video[];
-  history: History;
+  email: string;
+  age: number;
+};
+
+const user1: Partial<User> = {
+  name: "Vansh",
+};
+const user2: Partial<User> = {
+  email: "vansh@gmail.com",
+};
+const user3: Partial<User> = {
+  name: "Vansh",
+  age: 23,
 };
