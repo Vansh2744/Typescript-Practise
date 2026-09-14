@@ -41,3 +41,7 @@
 function neverReturn(): never {
   while (true) {}
 }
+
+function getUser(): never {
+  throw new Error("User not found");
+}
