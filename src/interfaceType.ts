@@ -21,7 +21,7 @@ type User = {
 //   }
 // }
 
-//---------Incorrect Ways-------------
+//---------Incorrect Way-------------
 
 // type Role = "ADMIN" | "USER";
 
@@ -29,11 +29,20 @@ type User = {
 
 // }
 
+//------------Correct Ways--------------
 
-// type Role = { role: "USER" | "ADMIN" };
+// type Role = { user: "STUDENT" | "ADMIN" };
 
 // class LMS implements Role {
-//   role = "user";
+//   user: "STUDENT" | "ADMIN" = "STUDENT";
 // }
 
+//------------------
 
+// interface Role {
+//   user: "STUDENT" | "ADMIN";
+// }
+
+// class LMS implements Role {
+//   user: "STUDENT" | "ADMIN" = "STUDENT";
+// }
