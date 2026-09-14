@@ -66,19 +66,51 @@
 
 //-----------------------------
 
+// type User = {
+//   name: string;
+//   email: string;
+//   age: number;
+// };
+
+// const user1: Partial<User> = {
+//   name: "Vansh",
+// };
+// const user2: Partial<User> = {
+//   email: "vansh@gmail.com",
+// };
+// const user3: Partial<User> = {
+//   name: "Vansh",
+//   age: 23,
+// };
+
+//-------------------------------
+
+// type User = {
+//   name?: string;
+//   email?: string;
+//   age: number;
+// };
+
+// const user: Required<User> = {
+//   age: 23,
+//   name: "Vansh",
+//   email: "vansh@gmail.com",
+// };
+
+//--------------------------------
+
 type User = {
   name: string;
   email: string;
   age: number;
 };
 
-const user1: Partial<User> = {
+const user: Pick<User, "name" | "email"> = {
   name: "Vansh",
-};
-const user2: Partial<User> = {
   email: "vansh@gmail.com",
 };
-const user3: Partial<User> = {
+
+const user2: Omit<User, "age"> = {
   name: "Vansh",
-  age: 23,
+  email: "vansh@gmail.com",
 };
