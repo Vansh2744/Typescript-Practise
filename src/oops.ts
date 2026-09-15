@@ -33,22 +33,78 @@
 
 //---------------------------------------------
 
-class Student {
-  protected name: string = "Vansh";
-}
+// class Student {
+//   protected name: string = "Vansh";
+// }
 
-class School extends Student {
-  getName(): string {
-    return `Name : ${this.name}`;
+// class School extends Student {
+//   getName(): string {
+//     return `Name : ${this.name}`;
+//   }
+// }
+
+// const sc = new School();
+
+// // console.log(sc.name); // cannot access
+
+// console.log(sc.getName());
+
+// const std = new Student();
+
+// // console.log(std.name); // cannot access
+
+//----------------------------------------------
+
+// class Student {
+//   readonly email: string;
+
+//   constructor(email: string) {
+//     this.email = email;
+//   }
+
+//   // this will give error
+
+//   //   setEmail(val:string){
+//   //     this.email = val
+//   //   }
+// }
+
+// const std = new Student("vansh@gmail.com");
+
+//----------------------------------------------
+
+// class Student {
+//   private _email: string = "default@gmail.com";
+
+//   get email(): string {
+//     return `Email: ${this._email}`;
+//   }
+
+//   set email(val: string) {
+//     this._email = val;
+//   }
+// }
+
+//----------------------------------------------
+
+// class Student {
+//   static name: string;
+// }
+
+// const std = new Student();
+// // console.log(std.name); // cannot access
+// console.log(Student.name);
+
+//------------------------------------------------
+
+class Student {
+  static name: string;
+
+  constructor(name: string) {
+    Student.name = name;
   }
 }
 
-const sc = new School();
-
-// console.log(sc.name); // cannot access
-
-console.log(sc.getName());
-
-const std = new Student();
-
+const std = new Student("Vansh");
 // console.log(std.name); // cannot access
+console.log(Student.name);

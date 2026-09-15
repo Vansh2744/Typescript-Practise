@@ -25,17 +25,49 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // // console.log(std.accNo); // cannot access
 // console.log(std.getInfo());
 //---------------------------------------------
+// class Student {
+//   protected name: string = "Vansh";
+// }
+// class School extends Student {
+//   getName(): string {
+//     return `Name : ${this.name}`;
+//   }
+// }
+// const sc = new School();
+// // console.log(sc.name); // cannot access
+// console.log(sc.getName());
+// const std = new Student();
+// // console.log(std.name); // cannot access
+//----------------------------------------------
+// class Student {
+//   readonly email: string;
+//   constructor(email: string) {
+//     this.email = email;
+//   }
+//   // this will give error
+//   //   setEmail(val:string){
+//   //     this.email = val
+//   //   }
+// }
+// const std = new Student("vansh@gmail.com");
+//----------------------------------------------
+// class Student {
+//   private _email: string = "default@gmail.com";
+//   get email(): string {
+//     return `Email: ${this._email}`;
+//   }
+//   set email(val: string) {
+//     this._email = val;
+//   }
+// }
+//----------------------------------------------
 class Student {
-    name = "Vansh";
-}
-class School extends Student {
-    getName() {
-        return `Name : ${this.name}`;
+    static name;
+    constructor(name) {
+        Student.name = name;
     }
 }
-const sc = new School();
-// console.log(sc.name); // cannot access
-console.log(sc.getName());
-const std = new Student();
-console.log(std.name);
+const std = new Student("Vansh");
+// console.log(std.name); // cannot access
+console.log(Student.name);
 //# sourceMappingURL=oops.js.map
