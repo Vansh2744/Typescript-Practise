@@ -61,13 +61,45 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //   }
 // }
 //----------------------------------------------
+// class Student {
+//   static name: string;
+// }
+// const std = new Student();
+// // console.log(std.name); // cannot access
+// console.log(Student.name);
+//------------------------------------------------
+// class Student {
+//   static name: string;
+//   constructor(name: string) {
+//     Student.name = name;
+//   }
+// }
+// const std = new Student("Vansh");
+// // console.log(std.name); // cannot access
+// console.log(Student.name);
+//--------------------------------------------------
+// abstract class Auth {
+//   abstract isValid(): void;
+// }
+// class Payment extends Auth {
+//   isValid() {}
+// }
+//--------------------------------------------
+class School {
+    name = "Government Sen Sec School";
+}
 class Student {
-    static name;
-    constructor(name) {
-        Student.name = name;
+    school;
+    //   school: School;
+    constructor(school) {
+        this.school = school;
+        this.school = school;
+    }
+    getSchool() {
+        return `School: ${this.school.name}`;
     }
 }
-const std = new Student("Vansh");
-// console.log(std.name); // cannot access
-console.log(Student.name);
+const sc = new School();
+const std = new Student(sc);
+console.log(std.getSchool());
 //# sourceMappingURL=oops.js.map

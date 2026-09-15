@@ -111,10 +111,33 @@
 
 //--------------------------------------------------
 
-abstract class Auth {
-  abstract isValid(): void;
+// abstract class Auth {
+//   abstract isValid(): void;
+// }
+
+// class Payment extends Auth {
+//   isValid() {}
+// }
+
+//--------------------------------------------
+
+class School {
+  name: string = "Government Sen Sec School";
 }
 
-class Payment extends Auth {
-  isValid() {}
+class Student {
+  //   school: School;
+  constructor(private school: School) {
+    this.school = school;
+  }
+
+  getSchool(): string {
+    return `School: ${this.school.name}`;
+  }
 }
+
+const sc = new School();
+
+const std = new Student(sc);
+
+console.log(std.getSchool());
