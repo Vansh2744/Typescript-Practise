@@ -99,18 +99,18 @@
 
 //--------------------------------
 
-type User = {
-  name: string;
-  email: string;
-  age: number;
-};
+// type User = {
+//   name: string;
+//   email: string;
+//   age: number;
+// };
 
-const user: Pick<User, "name" | "email"> = {
-  name: "Vansh",
-  email: "vansh@gmail.com",
-};
+// const user: Pick<User, "name" | "email"> = {
+//   name: "Vansh",
+//   email: "vansh@gmail.com",
+// };
 
-const user2: Omit<User, "age"> = {
-  name: "Vansh",
-  email: "vansh@gmail.com",
-};
+// const user2: Omit<User, "age"> = {
+//   name: "Vansh",
+//   email: "vansh@gmail.com",
+// };
