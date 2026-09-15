@@ -97,14 +97,24 @@
 
 //------------------------------------------------
 
-class Student {
-  static name: string;
+// class Student {
+//   static name: string;
 
-  constructor(name: string) {
-    Student.name = name;
-  }
+//   constructor(name: string) {
+//     Student.name = name;
+//   }
+// }
+
+// const std = new Student("Vansh");
+// // console.log(std.name); // cannot access
+// console.log(Student.name);
+
+//--------------------------------------------------
+
+abstract class Auth {
+  abstract isValid(): void;
 }
 
-const std = new Student("Vansh");
-// console.log(std.name); // cannot access
-console.log(Student.name);
+class Payment extends Auth {
+  isValid() {}
+}
