@@ -1,4 +1,3 @@
-"use strict";
 // function displayUser(name: string, phone: string | number) {
 //   if (typeof phone === "string") {
 //     console.log(`Calling String type phone : ${name}`);
@@ -6,7 +5,6 @@
 //     console.log(`Calling Number type phone : ${name}`);
 //   }
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
 // let access: string | undefined;
 // function dashboard(role: "USER" | "ADMIN" | "MEMBER") {
 //   if (role === "ADMIN") {
@@ -87,4 +85,5 @@ const name = "Vansh";
 if (typeof name === "string") {
     console.log(name.toUpperCase());
 }
+export {};
 //# sourceMappingURL=typeNarrowing.js.map

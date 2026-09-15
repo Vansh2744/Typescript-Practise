@@ -1,10 +1,9 @@
-"use strict";
 // let user: {
 //   name: string;
 //   email: string;
 //   age: number;
 // };
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 // user = {
 //   name: "Vansh",
 //   email: "vansh@gmail.com",

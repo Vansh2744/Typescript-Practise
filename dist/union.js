@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const phone1 = 9893883748;
 const phone2 = "9893883748";
 let access;
@@ -11,4 +9,5 @@ function dashboard(role) {
 }
 console.log(dashboard("ADMIN"));
 console.log(access);
+export {};
 //# sourceMappingURL=union.js.map

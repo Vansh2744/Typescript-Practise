@@ -1,10 +1,9 @@
-"use strict";
 // type User = {
 //   name: string;
 //   email: string;
 //   age: number;
 // };
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 // class Info implements User {
 //   name = "Vansh";
 //   email = "vansh@gmail.com";

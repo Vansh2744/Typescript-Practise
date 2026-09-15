@@ -1,10 +1,8 @@
-"use strict";
 // enum Size {
 //   SMALL,
 //   MEDIUM,
 //   LARGE,
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
 // const size1 = Size.SMALL; // 0
 // const size2 = Size.MEDIUM; // 1
 // const size3 = Size.LARGE; // 2
@@ -26,5 +24,6 @@ var Role;
     Role["USER"] = "USER";
     Role["ADMIN"] = "ADMIN";
 })(Role || (Role = {}));
+export {};
 // Role.ADMIN = "MAIN" // give error
 //# sourceMappingURL=enum.js.map

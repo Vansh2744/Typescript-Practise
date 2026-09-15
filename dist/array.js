@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const arr1 = ["Vansh", "Aman"];
 const arr = [
     [12, 34, 56],
@@ -22,4 +20,5 @@ const arr5 = ["Vansh", 34];
 const arr6 = ["Vansh", 34];
 const arr7 = ["Vansh", 23];
 const arr8 = ["Vansh", 23];
+export {};
 //# sourceMappingURL=array.js.map

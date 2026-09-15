@@ -1,4 +1,3 @@
-"use strict";
 // class Student {
 //   name: string;
 //   age: number;
@@ -7,7 +6,6 @@
 //     this.age = age;
 //   }
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
 // const std = new Student("Vansh", 23);
 //---------------------------------------------
 // class Student {
@@ -102,4 +100,5 @@ class Student {
 const sc = new School();
 const std = new Student(sc);
 console.log(std.getSchool());
+export {};
 //# sourceMappingURL=oops.js.map

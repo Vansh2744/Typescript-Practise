@@ -1,10 +1,9 @@
-"use strict";
 // type User = {
 //   name: string;
 //   email: string;
 //   age?: number;
 // };
-Object.defineProperty(exports, "__esModule", { value: true });
+export {};
 // function displayInfo(user: User): User {
 //   return user;
 // }

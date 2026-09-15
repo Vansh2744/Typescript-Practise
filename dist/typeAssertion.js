@@ -1,6 +1,4 @@
-"use strict";
 // const name: any = "Vansh";
-Object.defineProperty(exports, "__esModule", { value: true });
 // const len = (name as string).length;
 // type User = {
 //   name: string;
@@ -33,4 +31,5 @@ function neverReturn() {
 function getUser() {
     throw new Error("User not found");
 }
+export {};
 //# sourceMappingURL=typeAssertion.js.map
